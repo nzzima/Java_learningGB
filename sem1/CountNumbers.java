@@ -4,20 +4,26 @@
 package sem1;
 
 public class CountNumbers {
-    public static void main(String[] args) {
-        int[] array = {1,1,0,1,1,1,0,0,1,1,1,1,0,1,0,1,1,0};
-        int count = 0;
-        int max = 0;
-        for (int elem : array) {
-            if (elem == 1) {
-                count = count + 1;
+    private static int getMaxOnce(int[] numbers) {
 
-                //if (max < count) max = count;
-                //max = max < count? count: max;
-                max = Math.max(max, count);
+        int max = 0;
+        int temp = 0;
+        for (int num : numbers) {
+            if (num == 1) {
+                temp++;
+            // if (max < temp) max = temp;
+            // max = max < temp? temp: max;
+                max = Math.max(max, temp);
+            } else {
+                temp = 0;
             }
-            else max = 0;
         }
+        return max;
+    }
+
+    public static void main(String[] args) {
+        int[] numbers = {1, 1, 0, 1, 1, 1};
+        int max = getMaxOnce(numbers);
         System.out.println(max);
     }
 }
