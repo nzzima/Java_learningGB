@@ -11,8 +11,8 @@ public class CountNumbers {
         for (int num : numbers) {
             if (num == 1) {
                 temp++;
-            // if (max < temp) max = temp;
-            // max = max < temp? temp: max;
+//            if (max < temp) max = temp;
+//            max = max < temp? temp: max;
                 max = Math.max(max, temp);
             } else {
                 temp = 0;
