@@ -4,13 +4,17 @@
 
 package sem2;
 
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class RepeatTEST_catchErr {
     public static void main(String[] args) {
         String inStr = "TEST";
         int countRepeat = 100;
 
         String str = create_repeatStr(inStr, countRepeat);
-        System.out.println(str);
+        str_to_txtFile(str, "RepeatedTEST.txt");
+        // System.out.println(str);
     }
 
     private static String create_repeatStr(String inStr, int count) {
@@ -21,7 +25,12 @@ public class RepeatTEST_catchErr {
         return str.toString();
     }
 
-    public static void str_to_txtFile(String str) {
-        
+    public static void str_to_txtFile(String str, String name_of_file) {
+        try (FileWriter filewriter = new FileWriter(name_of_file)) {
+            filewriter.write(str);
+            System.out.println("Success write!");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
