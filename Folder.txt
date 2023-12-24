@@ -1,6 +1,9 @@
 .git
 .idea
+Folder.txt
 Java_learningGB.iml
+Log.txt
+newFIle.txt
 out
 program.java
 README.md
