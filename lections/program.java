@@ -1,3 +1,4 @@
+package lections;
 /**
  * program
  */
