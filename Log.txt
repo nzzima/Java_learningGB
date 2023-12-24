@@ -1,4 +1,4 @@
-дек. 24, 2023 2:57:34 PM sem2.Logging writeToFile
+дек. 24, 2023 8:46:05 PM sem2.Logging writeToFile
 INFO: Ошибка записи информации!
-дек. 24, 2023 2:57:34 PM sem2.Logging writeToFile
+дек. 24, 2023 8:46:05 PM sem2.Logging writeToFile
 INFO: . (Отказано в доступе)
