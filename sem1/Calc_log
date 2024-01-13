@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-12-28T12:30:37.126771900Z</date>
+  <millis>1703766637126</millis>
+  <nanos>771900</nanos>
+  <sequence>0</sequence>
+  <logger>sem1.Calculator</logger>
+  <level>INFO</level>
+  <class>sem1.Calculator</class>
+  <method>writeLog</method>
+  <thread>1</thread>
+  <message>Success sum</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-12-28T12:30:51.555343900Z</date>
+  <millis>1703766651555</millis>
+  <nanos>343900</nanos>
+  <sequence>0</sequence>
+  <logger>sem1.Calculator</logger>
+  <level>INFO</level>
+  <class>sem1.Calculator</class>
+  <method>writeLog</method>
+  <thread>1</thread>
+  <message>Success division</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-12-28T12:31:06.521775700Z</date>
+  <millis>1703766666521</millis>
+  <nanos>775700</nanos>
+  <sequence>0</sequence>
+  <logger>sem1.Calculator</logger>
+  <level>INFO</level>
+  <class>sem1.Calculator</class>
+  <method>writeLog</method>
+  <thread>1</thread>
+  <message>Success multiplication</message>
+</record>
+</log>

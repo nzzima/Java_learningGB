@@ -16,8 +16,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
-public class Logging {
-    private static Logger logger = Logger.getLogger(Logging.class.getName());
+public class ContentFolder {
+    private static Logger logger = Logger.getLogger(ContentFolder.class.getName());
 
     public static void main(String[] args) {
         try {
@@ -29,9 +29,9 @@ public class Logging {
             throw new RuntimeException(e);
         }
 
-        String[] contentFolder = getFolderContent(".");
+        String[] contentFolder = getFolderContent("sem1");
         // String[] contentFolder = getFolderContent(System.getProperty("user.dir"));
-        writeToFile(contentFolder, ".");
+        writeToFile(contentFolder, "sem2/Folder.txt");
     }
 
     public static String[] getFolderContent(String nameFolder) {
