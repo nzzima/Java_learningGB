@@ -3,8 +3,6 @@ package sem4;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-import javax.swing.plaf.synth.SynthDesktopIconUI;
-
 // 📌 1) Замерьте время, за которое в ArrayList добавятся 10000 элементов.
 // 📌 2) Замерьте время, за которое в LinkedList добавятся 10000 элементов.
 // Сравните с предыдущим.
