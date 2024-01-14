@@ -36,5 +36,7 @@ public class console_stack_string {
                 System.out.println(list);
             }
         }
+
+        sc.close();
     }
 }
