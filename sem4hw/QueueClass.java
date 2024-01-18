@@ -10,6 +10,7 @@ public class QueueClass {
         enqueu(2);
         enqueu(20);
         enqueu(11);
+        enqueu(11);
         System.out.println(queue);
         dequeue();
         System.out.println(queue);
