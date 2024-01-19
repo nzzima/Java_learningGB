@@ -1,32 +1,41 @@
 package sem5_pre;
 
-import java.util.HashMap;
+import java.util.TreeMap;
 
 public class RimArabNumbers {
+    static TreeMap<Integer, String> map = new TreeMap<>();
     public static void main(String[] args) {
-        HashMap<Integer, Character> struct = new HashMap<>();
-        struct.put(1, 'I');
-        struct.put(5, 'V');
-        struct.put(10, 'X');
-        struct.put(50, 'L');
-        struct.put(100, 'C');
-        struct.put(500, 'D');
-        struct.put(1000, 'M');
+        map.put(1, "I");
+        map.put(5, "V");
+        map.put(10, "X");
+        map.put(50, "L");
+        map.put(100, "C");
+        map.put(500, "D");
+        map.put(1000, "M");
 
         String text = "MMXXII";
-        int arab = ConvertFromRim_to_Arab(struct, text);
-        System.out.println(text + " = " + arab);
+        System.out.println(text + " = " + ConvertFromRoman_to_Arab(text));
+        int number = 2025;
+        System.out.println(number + " = " + ConvertFromArab_to_Roman(number)); 
     }
 
-    public static int ConvertFromRim_to_Arab(HashMap<Integer, Character> struct, String rim) {
-        int arab_number = 0;
-        for (char c : rim.toCharArray()) {
-            for (Integer number : struct.keySet()) {
-                if (c == struct.get(number)) {
-                    arab_number += number;
+    public static int ConvertFromRoman_to_Arab(String roman) {
+        int arab = 0;
+        for (char s : roman.toCharArray()) {
+            for (Integer number : map.keySet()) {
+                if (s == map.get(number).charAt(0)) {
+                    arab += number;
                 }
             }
         }
-        return arab_number;
+        return arab;
+    }
+
+    public static String ConvertFromArab_to_Roman(int arab) {
+        int l = map.floorKey(arab);
+        if (arab == l) {
+            return map.get(arab);
+        }
+        return map.get(l) + ConvertFromArab_to_Roman(arab - l);
     }
 }
