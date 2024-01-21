@@ -1,5 +1,7 @@
 package sem6;
 
+import java.util.Objects;
+
 public class Cat {
     private String name;
     private int age;
@@ -42,5 +44,22 @@ public class Cat {
                 ", age=" + age +
                 ", color='" + color + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        Cat cat = (Cat) obj;
+        return name.equals(cat.name) && age == cat.age && color.equals(cat.color);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name,age,color);
     }
 }
