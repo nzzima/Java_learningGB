@@ -24,8 +24,9 @@ public class MainCat {
         Cat cat4 = new Cat("черный", 2, "Шипа");
         Cat cat5 = new Cat("белый", 5, "Мурзик");
         Cat cat6 = new Cat("серый", 1, "Барсик");
+        Cat cat7 = new Cat("желтый", 3, "Васька");
 
-        Set<Cat> cats = new HashSet<>(Arrays.asList(cat1, cat2, cat3, cat4, cat5, cat6));
+        Set<Cat> cats = new HashSet<>(Arrays.asList(cat1, cat2, cat3, cat4, cat5, cat6, cat7));
 
         for (Cat cat : cats) {
             System.out.println(cat);
