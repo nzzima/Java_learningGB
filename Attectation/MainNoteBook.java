@@ -60,7 +60,7 @@ public class MainNoteBook {
                 Filtering(param, parts_of_request[1], notebooks);
             }
 
-            sc.close();
+            //sc.close();
         }
     }
 
