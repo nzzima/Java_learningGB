@@ -122,8 +122,6 @@ public class MainNoteBook {
                     break;
                 }
             }
-
-
             //sc.close();
         }
     }
