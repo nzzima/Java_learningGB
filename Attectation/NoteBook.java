@@ -1,5 +1,7 @@
 package Attectation;
 
+import java.util.Objects;
+
 public class NoteBook {
     private String manufacturer;
     private int model;
@@ -77,5 +79,24 @@ public class NoteBook {
                     ", HD_space='" + HD_space + '\'' +
                     ", OS='" + OS + '\'' +
         '}';
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        NoteBook nb = (NoteBook) obj;
+        return manufacturer.equals(nb.manufacturer) && model == nb.model &&
+                serial_number == nb.serial_number && RAM.equals(nb.RAM) &&
+                HD_space.equals(nb.HD_space) && OS.equals(nb.OS);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(manufacturer, model, serial_number, RAM, HD_space, OS);
     }
 }
