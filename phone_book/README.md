@@ -5,8 +5,8 @@
 ## Результат:
 Входная структура  
 
-![Screenshot](/source/Screenshot_1.png)
+![Screenshot](phone_book/source/Screenshot_1.png)
 
 Вывод:  
 
-![Screenshot](/source/Screenshot_2.png)
+![Screenshot](phone_book/source/Screenshot_2.png)
